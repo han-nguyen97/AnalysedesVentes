@@ -9,21 +9,21 @@ Les données comprennent les variables suivantes :
 -	Lead acquisition date : la date que le lead a été saisi pour la première fois dans le système CRM
 -	Product : le produit auquel l’organisation s’est intéressée
 -	Status : le statut du lead. Les statuts suivants peuvent être attribués à chaque lead
-1. New : vient d’ajouter
-2.	Qualified : le marketing a qualifié le lead comme valide
-3.	Sales accepted : le service des ventes a accepté le lead qualifié comme valide
-4.	Opportunity : le service des ventes travaille avec le lead
-5.	Customer : le lead (le client potentiel) est converti en client
-6.	Churned customer : le client a arrêté d’utiliser le produit
-7.	Disqualified : le marketing ou le service des ventes a disqualifié le lead comme invalide (cela peut se produire n’importe quel stade)
+  1. New : vient d’ajouter
+  2.	Qualified : le marketing a qualifié le lead comme valide
+  3.	Sales accepted : le service des ventes a accepté le lead qualifié comme valide
+  4.	Opportunity : le service des ventes travaille avec le lead
+  5.	Customer : le lead (le client potentiel) est converti en client
+  6.	Churned customer : le client a arrêté d’utiliser le produit
+  7.	Disqualified : le marketing ou le service des ventes a disqualifié le lead comme invalide (cela peut se produire n’importe quel stade)
 -	Status sequence : la colonne indiquant la séquence d’une étape dans le processus de conversion de lead
 -	Stage : stade du lead qui est dans la phase d’opportunité. Le stade peut être attribué comme suit : 
-1.	Opened : le service des ventes s’efforce d’établir la communication initiale
-2.	Initial contact : la communication initiale est établie
-3.	Nurturing : la communication permanente avec l’entreprise au sujet de l’offre
-4.	Proposal sent : une proposition est envoyée à l’entreprise
-5.	Won : l’entreprise a accepté l’offre
-6.	Lost : l’entreprise ne deviendra pas client
+  1.	Opened : le service des ventes s’efforce d’établir la communication initiale
+  2.	Initial contact : la communication initiale est établie
+  3.	Nurturing : la communication permanente avec l’entreprise au sujet de l’offre
+  4.	Proposal sent : une proposition est envoyée à l’entreprise
+  5.	Won : l’entreprise a accepté l’offre
+  6.	Lost : l’entreprise ne deviendra pas client
 
 # Méthode :
 -	Charger des données d’Excel vers Power BI
@@ -48,6 +48,12 @@ La valeur totale diminue significative après l’exclusion des clients “churn
 En général, le pipeline de vente montre un bon taux de conversion entre les différentes étapes, sauf les étapes suivantes : 
 - L’opportunité au client : Seules 348 leads transfèrent du stade de l’opportunité au stade de client (CVR = 28.6%), ce qui suggère des possibilités d’amélioration (des marges de progression).
 Recommandation : Déployer des outils automatisés pour assurer un suivi en temps utiles avec toutes les nouvelles opportunités.
+- Clients aux des clients “churn” : Taux d’attrition élevé indique des problèmes potentiels de satisfaction du client, de produit adapté ou d’assistance continue.
+Recommandation : Engager régulièrement avec les clients par des suivis et des enquêtes de satisfaction afin d'identifier et traiter les problèmes.
+
+Étape de l'opportunité détaillée :
+- Lead ouvert au premier contact : Seuls un tier des opportunités ouvertes se déplace au premier contact.
+Recommandation : Déployer des outils automatisés pour assurer un suivi en temps utile avec toutes les nouvelles opportunités
 - Envoi de la proposition aux “won” (entreprises ayant acceptées l’offre)  : Bien que plus de la moitié de la proposition envoyée se convertissent en gains, il y a toujours des pistes d’amélioration.
 Recommandation : Analyser des propositions “lost” (entreprises ayant rejeté les propositions) pour identifier les objections courantes et affiner les stratégies de proposition en conséquence
 
